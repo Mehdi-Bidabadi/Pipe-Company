@@ -1,0 +1,248 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #ff5e5e;
+    color: #fff;
+    padding: 10px;
+    
+}
+.img{
+    border-radius: 50px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.title {
+    width: 150px;
+    border-bottom: 2px solid silver;
+    margin: 0 60px 20px 0;
+    
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    margin-top: 10px;
+    width: 70%;
+}
+.logo p {
+    width: 75%;
+}
+
+.call{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.call div{
+    margin: 0 10px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+
+.list {
+    width: 30%;
+
+
+}
+.list p{
+    width: 20%;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+}
+.list ul{
+    list-style: none;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list ul li{
+    border-bottom: 1px solid silver;
+    width: 70%;
+    cursor: pointer;
+}
+
+.list ul li:hover{
+    background-color: #f1efef;
+    color: #e81111;
+}
+
+
+
+.address{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address span{
+    width: 20%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.addrss{
+    margin-bottom: 20px;
+}
+
+.phone{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cpy{
+    width: 100%;
+    height: 100px;
+    background-color: #ee5959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cpy p {
+    margin: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .desc, .list, .address {
+      width: 80%; /* Increase width on smaller devices */
+      margin: 10px 0;
+    }
+  
+    .call {
+      width: 80%;
+      justify-content: center;
+    }
+    .call div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .call div {
+      font-size: 30px; /* Slightly smaller call icon size */
+    }
+  
+    .list ul {
+      height: 180px; /* Reduce height of list on smaller screens */
+    }
+  
+    .logo {
+      width: 80%;
+    }
+  
+    .img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .title {
+      margin: 0 20px 10px 0;
+    }
+  }
+  
+  /* For mobile devices (portrait) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+   
+  
+    .desc, .list, .address {
+      width: 90%; /* Full width on mobile */
+      margin: 10px 0;
+      align-items: center;
+      
+    }
+  
+    .list p {
+      font-size: 18px;
+    }
+  
+    .phone {
+      height: 120px; /* Adjust phone block height for mobile */
+    }
+  
+    .call div {
+      font-size: 28px;
+    }
+  
+    .logo p {
+      font-size: 16px; /* Adjust text size in logo */
+    }
+  
+    .cpy {
+      height: 80px; /* Adjust footer height */
+    }
+    .cpy p{
+      margin-top: 20px;
+    }
+  }
+  
+  /* For very small devices (phones in landscape or very small screens) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .desc, .list, .address {
+      width: 100%; /* Full width for better visibility */
+      margin: 10px 0;
+    }
+  
+    .title {
+      width: 120px; /* Decrease width of the title */
+    }
+  
+    .call div {
+      font-size: 30px; /* Further reduce size of call icon */
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .list ul li {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  
+    .cpy p {
+      font-size: 14px; /* Adjust footer text size */
+    }
+  
+    .logo p {
+      font-size: 14px;
+    }
+  
+    .img {
+      width: 50px; /* Smaller image size for small screens */
+      height: 50px;
+    }
+  }

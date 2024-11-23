@@ -1,0 +1,193 @@
+.container {
+  width: 100%;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 2px 2px 29px 1px silver;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info div {
+  width: 40%;
+  height: 1px;
+  background-color: #e81111;
+}
+
+.info h3 {
+  color: #e81111;
+  font-weight: 600;
+  margin-top: 10px;
+  margin: 0 10px 0 10px;
+
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.p_desc {
+  width: 48%;
+  margin-left: 5px;
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.desc div p {
+  text-align: justify;
+
+}
+
+.img_desc {
+  width: 48%;
+  margin-right: 10px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+.imgb{
+  width: 99%;
+}
+.link{
+  display: flex;
+  justify-content: left;
+}
+.link a{
+  color: #e81111;
+
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    /* Increase width for smaller screens */
+    margin-top: 30px;
+    /* Adjust top margin */
+  }
+
+  .info div {
+    width: 40%;
+    /* Reduce width of horizontal lines */
+  }
+
+  .desc {
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center-align content */
+    text-align: center;
+    /* Center-align text for smaller screens */
+  }
+  .p_desc{
+    width: 95%;
+  }
+
+  .img_desc {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    /* Center and add spacing */
+  }
+
+  .desc div p {
+    text-align: justify;
+    margin: 0 auto;
+    /* Center-align paragraphs */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    /* Maximize width on smaller screens */
+  }
+
+  .info div {
+    width: 30%;
+    /* Further reduce width of horizontal lines */
+  }
+
+  .info h3 {
+    font-size: 1.2rem;
+    /* Slightly smaller font size */
+  }
+
+  .imgb {
+    width: 400px;
+  }
+
+  .desc {
+    flex-direction: column;
+    
+    
+  }
+
+  .img_desc {
+    width: 100%;
+    /* Adjust image size */
+    margin: 10px auto 10px auto;
+    /* Center image */
+  }
+
+  .p_desc {
+    margin: 0;
+    width: 95%;
+    /* Remove unnecessary margins */
+  }
+
+  .desc div p {
+    font-size: 0.9rem;
+    /* Reduce paragraph font size */
+    text-align: center;
+    /* Center text for better readability */
+  }
+  
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    /* Take full width */
+    margin-top: 20px;
+    /* Reduce top margin */
+    border-radius: 8px;
+    /* Smaller border radius */
+  }
+
+  .info h3 {
+    font-size: 1rem;
+    /* Smaller font size for headers */
+  }
+
+  .imgb {
+    width: 100%;
+    height: 200px;
+  }
+
+  .desc div p {
+    font-size: 0.8rem;
+    /* Smaller font size for paragraphs */
+    padding: 5px;
+    /* Add padding for better spacing */
+  }
+
+  .img_desc {
+    width: 100%;
+    /* Full width for images */
+    margin-bottom: 10px;
+    /* Add spacing below image */
+  }
+}

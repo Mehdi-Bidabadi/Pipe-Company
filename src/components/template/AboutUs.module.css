@@ -1,0 +1,70 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 180px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .valuesList {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .valuesList li {
+    margin-bottom: 5px;
+  }
+
+  .photosSection {
+    margin-top: 2rem;
+  }
+  
+  .photosGrid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .photo {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .photo img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }

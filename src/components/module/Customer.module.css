@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.customer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.customer span{
+    width: 40%;
+    height: 2px;
+    border-bottom: 1px solid #e81111;
+}
+.customer p{
+    margin: 0 20px;
+    font-size: 20px;
+    color: #e81111;
+    font-weight: 600;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card{
+    width: 12%;
+    height: 200px;
+    background-color: rgb(173, 162, 162);
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    border-color: rgb(112, 111, 111);
+}
+
+@media (max-width: 1024px) {
+    .customer span {
+      width: 30%; /* Reduce line width */
+    }
+  
+    .customer p {
+      font-size: 18px; /* Slightly smaller text */
+    }
+  
+    .box {
+      width: 100%;
+      flex-wrap: wrap;
+      
+    }
+  
+    .card {
+      width: 30%; /* Increase card width */
+      height: 180px; /* Adjust height for better scaling */
+      margin: 20px auto;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .customer span {
+      width: 30%; /* Further reduce line width */
+    }
+  
+    .customer p {
+      font-size: 16px; /* Smaller font size */
+    }
+  
+    .box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+  
+    .card {
+      width: 40%;
+      
+      height: 150px; 
+      margin: 10px 0; /* Add vertical spacing between cards */
+    }
+  }
+  
+  /* For small phones */
+  @media (max-width: 480px) {
+    .customer span {
+      width: 30%; /* Minimal line width */
+    }
+  
+    .customer p {
+      font-size: 14px; /* Smaller text for better readability */
+      text-align: center; /* Center-align text */
+    }
+  
+    .box {
+      display: flex;
+      justify-content: center;    }
+  
+    .card {
+      width: 70%; /* Full width for small screens */
+      height: 120px; /* Reduce height */
+    }
+  }

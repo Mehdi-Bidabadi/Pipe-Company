@@ -1,0 +1,131 @@
+.container {
+    width: 100%;
+    display: flex;
+    
+}
+
+.box_card {
+    width: 100%; /* Full width for smaller screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards on smaller screens */
+    align-items: center;
+    background-color: #ccc;
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.card {
+    width: 100%; /* Default full width */
+    max-width: 25%; /* Limits the card width */
+    height: 370px;
+    border: 1px solid silver;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Adds hover effect */
+}
+
+.box_img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_img span {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures image scaling looks good */
+}
+
+.box_price {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px dashed silver;
+}
+
+.box_shop {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.number {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.sum,
+.Subtraction {
+    border: 1px solid #e81111;
+    background-color: #e81111;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 45%; /* Two cards per row on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        max-width: 70%; /* One card per row on smaller screens */
+    }
+
+    .box_card {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        flex-direction: column;
+    }
+    .card {
+        max-width: 100%; /* Full width for very small screens */
+    }
+
+    .box_shop {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .number {
+        width: 50%; /* Adjust width for small screens */
+    }
+}
+
+
+

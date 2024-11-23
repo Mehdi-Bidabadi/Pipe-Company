@@ -1,0 +1,19 @@
+.faqContainer {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .faqList {
+    margin-top: 20px;
+  }
